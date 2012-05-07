@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block body %}
+
+<meta charset='UTF-8' />
+
+<link rel='stylesheet' type='text/css' href='../static/Firstpage/css/style.css' />
+
+<div id="page-wrap">
+
+	<h1>Nano World</h1>
+
+	<p>Show Website:：</p>
+
+	<section class="image-gallery group">
+
+		<figure tabindex="1">
+			<img src="../static/Firstpage/images/img1.jpg" alt="p1" />
+			<figcaption>picture1</figcaption>
+		</figure>
+
+		<figure tabindex="2">
+			<img src="../static/Firstpage/images/img2.jpg" alt="p2" />
+			<figcaption>picture2</figcaption>
+		</figure>
+
+		<figure tabindex="3">
+			<img src="../static/Firstpage/images/img3.jpg" alt="p3" />
+			<figcaption>picture3</figcaption>
+		</figure>
+
+	</section>
+
+	<p>GMS系统很强大!</p>
+
+</div>
+
+
+
+{% endblock %}

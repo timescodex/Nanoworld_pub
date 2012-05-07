@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block body %}
+<link rel='stylesheet' type='text/css' href='../static/Firstpage/css/style.css' />
+<section class="row" id="forms">
+	<h2 class="fontface">登录</h2>
+	<form action="{{ url_for('login')}}" method=post class="col col_6">
+    	<fieldset>	
+            <div>
+            	<label for="email">邮箱</label>
+                <input type="email" id="email" required="required" class="box_shadow" name="email" />
+            </div>
+            <div>
+            	<label for="password">密码</label>
+                <input type="password" id="password" required="required" class="box_shadow" min="10" name="password"/>
+            </div>
+
+        </fieldset>
+	<div class="col col_2">
+		<input type="submit" value="提交">
+	</div>
+    </form>
+    <div>
+	Nano World是一个先进的基于地图准确定位的互助网站，在这里你可以：</br>
+			*发布任务，请求得到其他用户的帮助</br>
+			*搜索自己可帮助的任务，帮助别人以赚取更多被帮助的机会</br>
+			*和每一个在线用户聊天沟通</br>
+			*自由、安全、便利地控制个人隐私</br>
+			*结交到互帮互助的搭档和朋友</br>	
+    </div>
+    <blockquote class="right" style="width:250px;">
+        	
+     </blockquote>
+     <div class="clear"></div>
+     <blockquote>
+     	Nano World 很强大
+     </blockquote>
+  <div class="clear" style="height:15px;"></div>
+	<div class="col_16 col">
+    	
+    </div>
+</section>
+{% endblock%}

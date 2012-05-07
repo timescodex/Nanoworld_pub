@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<section class="row" id="forms">
+<form method="post" action={{ url_for('register') }}>
+    <input type="email" placeholder="email" name="email">
+    </br>
+    <input type="password" placeholder="password" name="password">
+    </br>
+    <input type="submit" value="提交">
+</form>
+<section>
+
+{% endblock %}
