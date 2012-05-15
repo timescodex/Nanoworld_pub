@@ -20,7 +20,3 @@ def gmap():
 @app_map.route('/talk')
 def talk():
     return render_template("talk.html")
-
-@app_map.route('/taskdetail')
-def taskdetail():
-    return render_template("task_detail.html")

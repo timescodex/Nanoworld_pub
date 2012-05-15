@@ -10,9 +10,7 @@ app=Flask(__name__)
 #define the key:
 app.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 
-app.register_blueprint(app_login,url_prefix='/login')
-app.register_blueprint(app_map,url_prefix='/gmap')
-app.register_blueprint(app_person,url_prefix='/profile')
+app.register_blueprint(login,url_prefix='/login')
 
 """
 @app.route('/gmap',methods=['POST','GET'])

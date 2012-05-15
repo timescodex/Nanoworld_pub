@@ -47,11 +47,11 @@
         
       <nav class="col_9 col">
         	<ul>
-		<li><a href="{{ url_for('firstpage') }}">首页</a></li>
-            	<li><a href="{{ url_for('register') }}">注册</a></li>
-                <li><a href="{{ url_for('gmap') }}">BMap</a></li>
-		<li><a href="{{ url_for('personinfo') }}">个人主页</a></li>
-		<li><a href="{{ url_for('logout') }}">退出</a></li>
+		<li><a href="{{ url_for('app_login.firstpage') }}">首页</a></li>
+            	<li><a href="{{ url_for('app_login.register') }}">注册</a></li>
+                <li><a href="{{ url_for('app_map.gmap') }}">BMap</a></li>
+		<li><a href="{{ url_for('app_person.personinfo') }}">个人主页</a></li>
+		<li><a href="{{ url_for('app_login.logout') }}">退出</a></li>
 		
             </ul>
         </nav>

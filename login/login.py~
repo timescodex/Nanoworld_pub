@@ -44,7 +44,7 @@ def login():
             if u["password"] == passwd:
                 session["uid"]=name       
                 print session["uid"]
-                return redirect(url_for('app_login.firstpage'))     
+                return redirect(url_for('firstpage'))     
             else:
                 pass
         else:
@@ -60,7 +60,7 @@ def firstpage():
 @app_login.route('/logout')
 def logout():
     session['uid'] = None
-    return redirect(url_for('app_login.login'))
+    return redirect(url_for('login'))
 
 
 
